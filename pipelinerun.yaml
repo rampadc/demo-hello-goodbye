@@ -4,7 +4,7 @@ metadata:
   annotations:
     techzone.ibm.com/tekton-pipeline-location: >-
       https://raw.githubusercontent.com/rampadc/demo-hello-goodbye/main/pipeline.yaml
-  generateName: hello-goodbye-upil32
+  generateName: hello-goodbye-
   namespace: default
 spec:
   params:
