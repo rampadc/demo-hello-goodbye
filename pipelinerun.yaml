@@ -1,0 +1,16 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  annotations:
+    techzone.ibm.com/tekton-pipeline-location: >-
+      https://raw.githubusercontent.com/rampadc/demo-hello-goodbye/main/pipeline.yaml
+  generateName: hello-goodbye-upil32
+  namespace: default
+spec:
+  params:
+    - name: username
+      value: Tekton2
+  pipelineRef:
+    name: hello-goodbye
+  serviceAccountName: pipeline
+  timeout: 1h0m0s
